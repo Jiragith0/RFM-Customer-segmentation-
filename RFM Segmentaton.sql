@@ -168,7 +168,7 @@ CREATE VIEW cluster_name AS
 	)	
     SELECT customer_id,
 		CASE
-			WHEN (F * M > 10 AND F * M <= 16 AND R > 3.4 AND R <= 4) 	THEN 'Champion'
+			WHEN (F * M > 10 AND F * M <= 16 AND R > 3.4 AND R <= 4)    THEN 'Champion'
 			WHEN (F * M > 10 AND F * M <= 16 AND R > 2.2 AND R <= 3.4)  THEN 'Loyal'
 			WHEN (F * M > 10 AND F * M <= 16 AND R >= 1 AND R <= 2.2)   THEN 'Cannot Lose Them'
 			WHEN (F * M > 6 AND F * M <= 10 AND R > 2.8 AND R <= 4)     THEN 'Potential Loyalist'
